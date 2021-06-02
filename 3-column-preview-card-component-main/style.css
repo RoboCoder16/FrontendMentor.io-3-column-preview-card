@@ -1,0 +1,207 @@
+@font-face {
+    font-family:lexendDeca;
+    src: url(./Lexend_Deca/LexendDeca-Regular.ttf);
+    
+}
+
+@font-face {
+    font-family: bigShoulders;
+    src: url(./Big_Shoulders_Display/BigShouldersDisplay-Regular.ttf)
+}
+
+
+
+
+.container {
+
+display:flex;
+flex-direction: row;
+justify-content:center;
+color:hsla(0, 0%, 100%, 0.75);
+border-radius:20px;
+font-size: 15px;
+padding:0px;
+font-weight: 700;
+
+
+
+
+
+/* I copy pasted the following code to center the card*/
+
+position:absolute;
+left:50%;
+top:50%;
+transform: translate(-50%,-50%);
+
+
+}
+
+.container div{
+
+width:150px;
+text-align: left;
+padding:42px;
+font-family:lexendDeca;
+
+
+
+
+}
+
+.container div button {
+
+border:2px solid hsl(0, 0%, 95%);
+border-radius:30px;
+background-color:hsl(0, 0%, 95%);
+padding:10px 24px;
+margin-top:40px;
+font-family:lexendDeca;
+
+
+
+
+}
+
+.container div h1 {
+
+font-family:bigShoulders;
+color:hsl(0, 0%, 95%);
+
+}
+
+.sedans {
+
+    background-color:hsl(31, 77%, 52%);
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+
+}
+
+.sedans button {
+
+color:hsl(31, 77%, 52%);
+
+}
+.sedans button:hover {
+
+    color:hsl(0, 0%, 95%);
+    background-color:hsl(31, 77%, 52%);
+    cursor:pointer;
+    }
+
+
+
+.SUVs {
+
+    background-color:hsl(184, 100%, 22%);
+
+}
+
+.SUVs button {
+
+ color: hsl(184, 100%, 22%);  
+
+}
+
+.SUVs button:hover {
+
+    color:hsl(0, 0%, 95%);
+    background-color:hsl(184, 100%, 22%);
+    cursor:pointer;
+    }
+
+.luxury {
+
+    background-color:hsl(179, 100%, 13%);
+     border-top-right-radius: 4px;
+     border-bottom-right-radius: 4px;
+}
+
+
+.luxury button {
+
+    color:hsl(179, 100%, 13%);
+
+}
+.luxury button:hover {
+
+    color:hsl(0, 0%, 95%);
+    background-color:hsl(179, 100%, 13%);
+    cursor:pointer;
+    }
+
+
+
+@media screen and (max-width:700px){
+    
+.container {
+
+
+flex-direction: column;
+
+
+
+
+}
+
+
+.sedans {
+
+border-bottom-left-radius: 0px;
+border-top-right-radius: 4px;
+
+
+}
+
+.luxury {
+
+border-top-right-radius: 0px;
+border-bottom-left-radius: 4px;
+
+
+}
+
+.container div {
+
+padding:2vw 3.5vw;
+
+font-size:1.6vw;
+width:120px;
+
+}
+
+.container div h1{
+
+font-size:3.6vw;
+
+}
+
+.container div button {
+
+font-size:1.2vw;
+margin-top:10px;
+padding:1vw 2vw;
+
+
+}
+
+img {
+    
+    width:10px;
+    height:10px;
+    margin:1vw;
+
+
+}
+
+}
+
+img {
+display:flex;
+justify-content:flex-start;
+width:24px;
+height:24px;
+
+
+}
